@@ -1,0 +1,27 @@
+server:
+  port: 9091
+
+spring:
+  application:
+    name: GREET-API
+  boot:
+    admin:
+      client:
+        url: http://localhost:1111/
+  cloud:
+    compatibility-verifier:
+      enabled: false     
+        
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+              
+              
+            

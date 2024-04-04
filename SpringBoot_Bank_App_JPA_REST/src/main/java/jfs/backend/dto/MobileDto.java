@@ -1,0 +1,14 @@
+package jfs.backend.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class MobileDto {
+
+	private Integer id;
+	private String mobNum;
+}

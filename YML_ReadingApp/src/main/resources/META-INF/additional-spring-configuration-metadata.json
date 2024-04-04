@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "server.appreading.messages.welcome",
+    "type": "java.lang.String",
+    "description": "A description for 'server.appreading.messages.welcome'"
+  },
+  {
+    "name": "server.appreading.messages.greet",
+    "type": "java.lang.String",
+    "description": "A description for 'server.appreading.messages.greet'"
+  },
+  {
+    "name": "server.appreading.messages.wish",
+    "type": "java.lang.String",
+    "description": "A description for 'server.appreading.messages.wish'"
+  }
+]}

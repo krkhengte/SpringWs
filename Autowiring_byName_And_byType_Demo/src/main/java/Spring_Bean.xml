@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+    <!--Autowiring using byName-->
+    
+    
+<!--    <bean id="car" class="jfs.backend.Car" autowire="byName"></bean>
+    
+    <bean id="dieselEng" class="jfs.backend.DieselEngine"></bean>-->
+    
+    
+    
+     <!--Autowiring using byType-->
+     
+<!--    <bean id="car" class="jfs.backend.Car" autowire="byType"></bean>
+    
+    <bean id="abc" class="jfs.backend.DieselEngine"></bean>-->
+    
+    
+     <!--Autowiring using byType-->
+     
+<!--    <bean id="car" class="jfs.backend.Car" autowire="byType"></bean>
+    
+    <bean id="abc" class="jfs.backend.DieselEngine" autowire-candidate="false"></bean>
+    <bean id="xyz" class="jfs.backend.DieselEngine"></bean>-->
+    
+    
+    
+     <!--Autowiring using Constructor-->
+     
+    <bean id="car" class="jfs.backend.Car" autowire="constructor"></bean>
+    
+    <bean id="abc" class="jfs.backend.DieselEngine" autowire-candidate="false"></bean>
+    <bean id="xyz" class="jfs.backend.DieselEngine"></bean>
+
+<!--If we want to perfom Autowiring through constructor then we can use 
+'constructor' mode-->
+
+</beans>

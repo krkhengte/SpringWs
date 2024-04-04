@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- bean definitions here -->
+	
+				<!--Autowiring byType Used-->
+	
+	<bean id="abc" class="jfs.backend.DieselEngine"></bean> 
+	<bean id="car" class="jfs.backend.Car" autowire="byType"> 
+	
+<!--	 byType means it will check data type of the variable. With Datatype of
+variable if any bean class is configured then it will identify that as dependent
+and it will inject into target.-->
+
+
+				<!--Autowiring byName Used-->
+				
+	
+<!--	<bean id="disEng" class="jfs.backend.DieselEngine"></bean>
+		<bean id="car" class="jfs.backend.Car" autowire="byName"> -->
+		
+		
+		<!-- byName means if target class variable name matched with any bean 
+id/name in bean configuration file then IOC will consider that as dependent bean
+and it will inject that dependent bean object into target object.-->
+		
+		<!--<property name="disEng" ref="disEng"></property>--> <!--it is a Manual Wiring-->
+		
+	</bean>
+
+</beans>

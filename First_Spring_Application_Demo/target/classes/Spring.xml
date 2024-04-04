@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- bean definitions here -->
+
+
+	<bean id="creditCard" class="jfs.backend.CreditCardPayment"></bean>
+	<bean id="debitCard" class="jfs.backend.DebitCardPayment"></bean>
+	<bean id="upi" class="jfs.backend.UPI_Payment"></bean>
+	<bean id="billCollector" class="jfs.backend.BillCollector">
+		
+	<property name="payment" ref="creditCard"></property>
+		
+		<!--<constructor-arg name="payment" ref="upi"></constructor-arg>-->
+		
+	</bean>
+
+
+</beans>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Good Thymes Virtual Grocery</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+	<form th:action="@{/registerd}" th:object="${user}" method="POST">
+
+		<table>
+
+			<tr>
+
+				<td>UserName</td>
+				<td><input type="text" th:field="*{userName}" /></td>
+				<td style="color: red;"><span th:if="${#fields.hasErrors('userName')}" th:errors="*{userName}"></span>
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td>User Password</td>
+				<td><input type="text" th:field="*{userPassword}" /></td>
+				<td style="color: red;"><span th:if="${#fields.hasErrors('userPassword')}"
+						th:errors="*{userPassword}"></span></td>
+
+			</tr>
+
+			<tr>
+
+				<td>User Gmail</td>
+				<td><input type="text" th:field="*{userGmail}" /></td>
+				<td style="color: red;"><span th:if="${#fields.hasErrors('userGmail')}" th:errors="*{userGmail}"></span>
+				</td>
+
+			</tr>
+
+
+			<tr>
+
+				<td>User Mobile</td>
+				<td><input type="text" th:field="*{userMobile}" /></td>
+				<td style="color: red;"><span th:if="${#fields.hasErrors('userMobile')}"
+						th:errors="*{userMobile}"></span></td>
+
+			</tr>
+
+			</tr>
+
+
+			<tr>
+
+				<td></td>
+				<td><input type="submit" value="Submit" /></td>
+
+
+			</tr>
+
+		</table>
+
+	</form>
+	<a href="/">Go To Home</a>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+
+<body>
+
+	<form th:action="@{/loginRep}" th:object="${}" method="POST">
+
+		<table border="1">
+
+			<tr>
+
+				<td>UserName</td>
+				<td><input type="text" th:field=*{} placeholder="Enter UserName" /> </td>
+
+			</tr>
+
+			<tr>
+
+				<td>UserName</td>
+				<td><input type="text" th:field=*{} placeholder="Enter UserName" /> </td>
+
+			</tr>
+
+
+			<tr>
+
+				<td></td>
+				<td><input type="submit" value="Submit" /> </td>
+
+			</tr>
+
+		</table>
+
+
+	</form>
+
+</body>
+
+</html>
